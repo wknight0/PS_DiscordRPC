@@ -63,7 +63,7 @@ const getQuotes = async () => {
     page.waitForSelector('xpath=//*[@id="app-mount"]/div/div/div[1]/div[3]/div[2]/div/div[1]/form/div[4]/div/div/div[2]/button[2]/div', {visible: true, timeout: 10000 });
     page.click('xpath=//*[@id="app-mount"]/div/div/div[1]/div[3]/div[2]/div/div[1]/form/div[4]/div/div/div[2]/button[2]/div');
     
-    await delay(100);
+    await delay(500);
     await browser.close();
 };
 

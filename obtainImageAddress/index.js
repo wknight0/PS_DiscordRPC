@@ -28,6 +28,7 @@ const getQuotes = async () => {
         waitUntil: "domcontentloaded",
     });
 
+    await delay(500);
     await page.click('xpath=//*[@id="islrg"]/div[1]/div[1]/a[1]/div[1]/img');
     await delay(2000);
     const issueSrcs = await page.evaluate(() => {

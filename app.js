@@ -19,8 +19,9 @@ async function updateApplicationFile() {
 }
 
 async function obtainImageAddress() {
+  await delay(2000);
   exec("startObtainImage.bat");
-  await delay(5000);
+  await delay(2000);
   await preparation();
 }
 
